@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "prefix": "meta",
+    "body": [
+      "meta = with stdenv.lib; {",
+      "\t\tdescription = \"$1\";",
+      "\t\thomepage = \"$2\";",
+      "\t\tmaintainers = [ maintainers.$3];",
+      "\t\tlicense = licenses.$4;",
+      "\t\tplatforms = platforms.$5;",
+      "\t\tinherit version;",
+      "};"
+    ],
+    "description": "Insert package meta"
+  }
+}
